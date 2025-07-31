@@ -14,12 +14,19 @@ const NewMessageForm = ({addNewMessage}) => {
         <form onSubmit= {handldeSubmitSendMessageForm}>
             <div>
                 <label htmlFor="message">Mensaje...</label>
-                <input type= 'text' placeholder='Mensaje...' id='message' name='message' required />
+                <input 
+                type= 'text' 
+                placeholder='Mensaje...' 
+                id='message' 
+                name='message' 
+                required />
             </div>
             <button type='submit'>Enviar mensaje</button>
         </form>
-    )
-}
+    );
+};
 
-export default NewMessageForm
+export default NewMessageForm   
+    
+
 

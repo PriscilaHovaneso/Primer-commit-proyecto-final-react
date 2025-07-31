@@ -12,7 +12,10 @@ const App = () => {
             path='/' 
             element={<ContactScreen/>}
             />
-        <Route path='/contacts/:contact_id' element={<ChatScreen />} />
+        <Route 
+            path='/contacts/:contact_id' 
+            element={<ChatScreen />} 
+        />
       </Routes>
      
       

@@ -6,7 +6,8 @@ const contacts =[
         avatar: 'https://static.wikia.nocookie.net/esharrypotter/images/8/8d/PromoHP7_Harry_Potter.jpg/revision/latest/scale-to-width-down/1000?cb=20160903184919',
         last_connection: '17:36',
         connection_status: 'offline',
-        messages: [{
+        messages: [
+            {
     emisor: 'YO',
     hora: '23.10',
     id: 1,

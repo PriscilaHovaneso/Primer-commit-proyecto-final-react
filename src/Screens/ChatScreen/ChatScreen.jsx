@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import {MessagesList} from '../../Components/MessagesList'
-import {NewMessageForm} from '../../Components/NewMessageForm/NewMessageForm'
+import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import { useParams } from 'react-router'
+import {getContactById} from '../../services/contactService';
 
 
 const ChatScreen = () => {
@@ -11,7 +12,7 @@ const ChatScreen = () => {
 
  const contact_selected = getContactById (contact_id)
 
- const [messages, setMessages] = useState(contact_selected.message)
+ const [messages, setMessages] = useState(contact_selected.messages)
 
  
     
@@ -22,10 +23,13 @@ const ChatScreen = () => {
             const new_message_list = messages.filter(message => message.id !== message_id)
             setMessages(new_message_list)
 
-            const addNewMessage = (newMessage) => {
+            
+        }
+
+        
+        const addNewMessage = (newMessage) => {
                 setMessages([...messages, newMessage])
             }
-        }
         
 return (
     <div>

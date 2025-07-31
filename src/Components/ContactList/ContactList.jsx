@@ -1,3 +1,5 @@
+import ContactItem from '../ContactItem/ContactItem'
+
 const ContactList = ({contacts}) => {
   <div>
     {contacts.map((contact) => (
