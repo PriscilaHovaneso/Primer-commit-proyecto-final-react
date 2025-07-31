@@ -12,7 +12,7 @@ const MessagesList = ({messages, deleteMessageById}) => {
         emisor={message.emisor}
         hora={message.hora}
         id={message.id}
-        texto={message.texto}
+        texto={message.texto||message.text}
         status={message.status}
 
         deleteMessageById={deleteMessageById}

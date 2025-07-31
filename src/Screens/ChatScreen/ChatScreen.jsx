@@ -30,10 +30,13 @@ const ChatScreen = () => {
         const addNewMessage = (newMessage) => {
                 setMessages([...messages, newMessage])
             }
+
+
+            console.log("Mensajes actuales:", messages);
         
 return (
     <div>
-        <h1>Mensajes:</h1>
+        <h1>Harry</h1>
         {
             messages.length > 0
             &&

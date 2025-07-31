@@ -25,14 +25,14 @@ const contacts =[
     emisor: 'YO',
     hora: '23.10',
     id: 3,
-    texto: 'Hola, como estas?',
+    texto: 'Todo bien',
     status:'visto'
     },
      {
     emisor: 'YO',
     hora: '23.10',
     id: 4,
-    texto: 'Hola, como estas?',
+    texto: 'Me alegro',
     status:'visto'
     }
 
@@ -50,21 +50,21 @@ const contacts =[
     emisor: 'YO',
     hora: '23.10',
     id: 1,
-    texto: 'Hola',
+    texto: 'Que onda?',
     status:'visto'
     },
      {
     emisor: 'otro',
     hora: '23.10',
     id: 2,
-    texto: 'Hola, como estas?',
+    texto: 'Aburrido, vos?',
     status:'visto'
     },
      {
     emisor: 'YO',
     hora: '23.10',
     id: 3,
-    texto: 'Hola, como estas?',
+    texto: 'Tengo hambre',
     status:'visto'
     },
      {
