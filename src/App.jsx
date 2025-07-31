@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import ContactScreen from './Screens/ContactScreen/ContactScreen'
 import ChatScreen from './Screens/ChatScreen/ChatScreen'
 import { Route, Routes} from 'react-router'
 
@@ -11,9 +12,7 @@ const App = () => {
             path='/' 
             element={<ContactScreen/>}
             />
-        <Route 
-            path='/contacts/:contact_idmessages' 
-            element={<ChatScreen/>}/>
+        <Route path='/contacts/:contact_id' element={<ChatScreen />} />
       </Routes>
      
       
