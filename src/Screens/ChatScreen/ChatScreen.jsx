@@ -4,6 +4,25 @@ import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import { useParams } from 'react-router'
 import {getContactById} from '../../services/contactService';
 
+const messages_servidor = [
+    {
+      emisor: 'YO',
+      hora: '23.10',
+      id: 1,
+      texto: 'Hola',
+      status:'visto'
+    
+    },
+    {
+      emisor: 'YO',
+      hora: '23.10',
+      id: 1,
+      texto: 'Hola',
+      status:'visto'
+    
+    }
+]
+
 
 const ChatScreen = () => {
     

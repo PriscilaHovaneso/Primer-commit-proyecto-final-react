@@ -81,16 +81,19 @@ const contacts =[
 
 ];
 
- const getContactList = () => {
+  const getContactList = () => {
     return contacts 
 }
 
- const getContactById =(contact_id) =>{
+  const getContactById =(contact_id) =>{
     for (const contact of contacts){
         if (Number(contact.id) === Number(contact_id)){
             return contact
         }
     }
+     return null
+
+    
 }
 
 export {getContactList, getContactById}
