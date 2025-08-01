@@ -4,34 +4,14 @@ import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import { useParams } from 'react-router'
 import {getContactById} from '../../services/contactService';
 
-const messages_servidor = [
-    {
-      emisor: 'YO',
-      hora: '23.10',
-      id: 1,
-      texto: 'Hola',
-      status:'visto'
-    
-    },
-    {
-      emisor: 'YO',
-      hora: '23.10',
-      id: 1,
-      texto: 'Hola',
-      status:'visto'
-    
-    }
-]
-
 
 const ChatScreen = () => {
-    
-    
- const {contact_id} =   useParams ()
 
- const contact_selected = getContactById (contact_id)
+const {contact_id} =   useParams ()
 
- const [messages, setMessages] = useState(contact_selected.messages)
+const contact_selected = getContactById (contact_id)
+
+const [messages, setMessages] = useState(contact_selected.messages)
 
  
     
@@ -55,7 +35,7 @@ const ChatScreen = () => {
         
 return (
     <div>
-        <h1>Harry</h1>
+        <h1>Mensajes</h1>
         {
             messages.length > 0
             &&
