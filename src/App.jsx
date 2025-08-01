@@ -13,7 +13,7 @@ const App = () => {
             element={<ContactScreen/>}
             />
         <Route 
-            path='/contacts/:contact_id' 
+            path='/contact/:contact_id/messages' 
             element={<ChatScreen />} 
         />
       </Routes>
